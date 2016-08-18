@@ -1,0 +1,19 @@
+<resources>
+  <string name="app_name">Unofficial MET Audio Guide</string>
+
+  <string name="hello_world">Hello world!!!!!!!</string>
+  <string name="action_settings">Settings</string>
+
+  <string-array name="country_arrays">
+    <item/>
+    <item>Malaysia</item>
+    <item>United States</item>
+    <item>Indonesia</item>
+    <item>France</item>
+    <item>Italy</item>
+    <item>Singapore</item>
+    <item>New Zealand</item>
+    <item>India</item>
+  </string-array>
+
+</resources>

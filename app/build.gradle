@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 23
+  buildToolsVersion "23.0.2"
+
+  defaultConfig {
+    applicationId "com.github.theyelllowdart.unofficialmetaudioguide.android"
+    vectorDrawables.useSupportLibrary = true
+    minSdkVersion 21
+    targetSdkVersion 23
+    versionCode 1
+    versionName "1.0"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile 'com.android.support:multidex:1.0.1'
+  compile 'com.android.support:appcompat-v7:23.4.0'
+  compile 'com.android.support:design:23.4.0'
+  compile 'com.android.support:palette-v7:23.4.0'
+  compile 'com.android.support:recyclerview-v7:23.4.0'
+  compile 'com.android.volley:volley:1.0.0'
+  compile 'com.github.bumptech.glide:glide:3.7.0'
+  compile 'com.google.guava:guava:18.0'
+  compile 'net.sf.opencsv:opencsv:2.3'
+}

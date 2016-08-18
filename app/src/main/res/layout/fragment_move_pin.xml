@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="4dp"
+              android:paddingTop="8dp">
+
+  <TextView
+    android:id="@+id/movePinHeading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="?android:attr/textColorPrimary"
+    android:textSize="16sp"
+    android:textStyle="bold"/>
+
+  <TextView
+    android:id="@+id/movePinSubheading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:textColor="?android:attr/textColorSecondary"
+    android:textSize="16sp"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="Drag the map above to move the pin. You can optionally set change the rotation by using the slider below."
+    android:textColor="?android:attr/textColorSecondary"
+    android:textSize="14sp"/>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Rotation: "
+      android:textColor="?android:attr/textColorSecondary"
+      android:textSize="14sp"/>
+
+    <TextView
+      android:id="@+id/degrees"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 0\u00B0"
+      android:textColor="?android:attr/textColorSecondary"
+      android:textSize="14sp"/>
+  </LinearLayout>
+
+
+  <SeekBar
+    android:id="@+id/seek_bar_rotation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <Button
+    android:id="@+id/btn_accept_move"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:text="Accept"/>
+
+</LinearLayout>
