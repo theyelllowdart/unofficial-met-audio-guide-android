@@ -15,7 +15,7 @@ import au.com.bytecode.opencsv.CSVReader;
 public class DatabaseHelper extends SQLiteOpenHelper {
   private final Context context;
 
-  public static final int DATABASE_VERSION = 2;
+  public static final int DATABASE_VERSION = 1;
   public static final String DATABASE_NAME = "MetAudioGuide.db";
 
   public DatabaseHelper(Context context) {
@@ -149,14 +149,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
   @Override
   public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    db.execSQL("DROP TABLE IF EXISTS gallery");
-    db.execSQL("DROP TABLE IF EXISTS art_object");
-    db.execSQL("DROP TABLE IF EXISTS media");
-    db.execSQL("DROP TABLE IF EXISTS user_add_stop");
-    db.execSQL("DROP TABLE IF EXISTS user_art_object_location");
-    db.execSQL("DROP TABLE IF EXISTS user_missing_art_object");
-    db.execSQL("DROP TABLE IF EXISTS version");
-    onCreate(db);
+
   }
 
   @Override
